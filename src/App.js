@@ -22,7 +22,7 @@ class App extends React.Component {
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
     e.preventDefault();
-    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${api_key}`);
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&lang=fr&units=metric&appid=${api_key}`);
   
     const response = await api_call.json();
     if(city && country) {
@@ -49,8 +49,11 @@ class App extends React.Component {
         <Form loadWeather={this.getWeather} />
         <Forecast 
         temperature={this.state.temperature}
-        city={this.state.country}
+        humidity={this.state.humidity}
+        pressure={this.state.pressure}
+        city={this.state.city}
         country={this.state.country}
+        description={this.state.description}
         icon={this.state.icon}
         error={this.state.error} />
       </div>
