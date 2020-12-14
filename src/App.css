@@ -4,3 +4,56 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+h1, h2 {
+  margin: 0;
+}
+
+body {
+  background-color: #f2f4f5;
+}
+.App {
+  max-width: 500px;
+  margin: auto;
+  padding: 3vw;
+  background-color: #fff;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 15px;
+  hyphens: manual;
+  font-size: xx-large;
+}
+label {
+  display: block;
+  font-size: larger;
+  padding: 10px;
+}
+input, button {
+  display: block;
+  margin: auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 270px;
+  border: 1px solid;
+  font-size: 16px;
+  text-align: center;
+}
+button {
+  -webkit-appearance: none;
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #607D8B;
+}
+::placeholder {
+  font-style: italic;
+  color: #999;
+}
+.weather-data {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid;
+}

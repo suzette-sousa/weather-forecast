@@ -4,9 +4,9 @@ const Form = (props) => {
   return (
     <form onSubmit={props.loadWeather}>
       <label htmlFor="city">Choisir une ville</label>
-      <input id="city" type="text" name="city" placeholder="Choisir une ville" required />
+      <input id="city" type="text" name="city" placeholder="Paris, Lisbonne..." required />
       <label htmlFor="country">Choisir un pays</label>
-      <input id="country" type="text" name="country" placeholder="Choisir un pays" required />
+      <input id="country" type="text" name="country" placeholder="France, Portugal..." required />
       <button>Afficher la météo</button>
     </form>
   )

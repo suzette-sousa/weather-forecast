@@ -47,7 +47,7 @@ class App extends React.Component {
       <div className="App">
         <Heading />
         <Form loadWeather={this.getWeather} />
-        <Forecast 
+        {this.state.city && <Forecast 
         temperature={this.state.temperature}
         humidity={this.state.humidity}
         pressure={this.state.pressure}
@@ -55,7 +55,7 @@ class App extends React.Component {
         country={this.state.country}
         description={this.state.description}
         icon={this.state.icon}
-        error={this.state.error} />
+        error={this.state.error} />}
       </div>
     );
   }
